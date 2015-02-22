@@ -64,7 +64,7 @@
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.6.0.7\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -78,6 +78,7 @@
     <Compile Include="SecurityHandler.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="LICENSE" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
@@ -85,7 +86,7 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LtiLibrary.Core\LtiLibrary.Core.csproj">
+    <ProjectReference Include="..\..\LtiLibrary\LtiLibrary.Core\LtiLibrary.Core.csproj">
       <Project>{75d41eb6-f34b-4973-86eb-11abfee995b0}</Project>
       <Name>LtiLibrary.Core</Name>
     </ProjectReference>
