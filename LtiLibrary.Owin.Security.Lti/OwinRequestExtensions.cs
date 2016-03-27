@@ -51,6 +51,9 @@ namespace LtiLibrary.Owin.Security.Lti
             // All LTI 1.x communication is handled with HTTP POST
             if (!request.Method.Equals(WebRequestMethods.Http.Post)) return false;
 
+            // All LTI requests should contain content and specify ContentType
+            if (string.IsNullOrEmpty(request.ContentType)) return false;
+
             // LTI launch and content item requests are sent as form posts
             if (request.ContentType.Equals("application/x-www-form-urlencoded"))
             {
